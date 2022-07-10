@@ -11,22 +11,22 @@ export default class NavBar extends Component {
     render() {
         return (
             <div>                
-                <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <nav className="navbar navbar-expand-lg navbar-light bg-light" >
                     
                     <div className="collapse navbar-collapse">
                     <a class="navbar-brand" href="#">
-      <img src="logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top"></img>
-      Bootstrap
+      <img src={require('./logo.png')} alt="" width="200" height="60" class="d-inline-block align-text-top"></img>
+      
     </a>
                         <ul className="navbar-nav mr-auto">
                             {/* <li className="navbar-item">
                                 <Link to="/users" className="nav-link">Users</Link>
                             </li> */}
-                            <li className="navbar-item">
-                                <Link to="/register" className="nav-link">Register</Link>
+                            <li className="navbar-item" >
+                                <Link to="/register" className="nav-link" style={{color:"black", fontSize: 25 +'px'}}>Register</Link>
                             </li>
                             <li className="navbar-item">
-                                <Link to="/login" className="nav-link">Login</Link>
+                                <Link to="/login" className="nav-link" style={{color:"black", fontSize: 25 +'px'}}>Login</Link>
                             </li>
                             {/* <li className="navbar-item">
                                 <Link to="/profile" className="nav-link">My Profile</Link>

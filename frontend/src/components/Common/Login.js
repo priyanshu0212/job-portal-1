@@ -4,6 +4,7 @@ import bcrypt from 'bcryptjs';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import  './login.css';
 
+
  
 
 export default class Login extends Component {
@@ -15,6 +16,7 @@ export default class Login extends Component {
             email: '',
             password: ''
         }
+        document.body.style = 'background: #F6CDDD;';
 
         this.onChangeEmail = this.onChangeEmail.bind(this);
         this.onChangePassword = this.onChangePassword.bind(this);
@@ -82,19 +84,20 @@ export default class Login extends Component {
     render() {
         return (
              < div className="login">
-                <div className="quote"> Login Page</div>  
+                
+                <div className="quote" style={{marginTop:20+'px',fontFamily:"sans-serif"}}> Login</div>  
                 <form onSubmit={this.addUser} method="user">
                 <div className="hero-text">
                
-                    <div className="form-group row">
+                    <div className="form-group row" style={{marginTop:40+'px'}}>
                         <label className="col-sm-2 col-form-label text-left">Email: </label>
-                        <div className="col-sm-9" style={{marginLeft:"10px"}}>
+                        <div className="col-sm-9" style={{marginLeft:"15px"}}>
                             <input type="text" className="form-control" onChange={this.onChangeEmail} name="name" value={this.state.email}/>
                         </div>
                     </div>
                     <div className="form-group row" >
                         <label className="col-sm-2 col-form-label text-left">Password: </label>
-                        <div className="col-sm-9" style={{marginLeft:"10px"}}>
+                        <div className="col-sm-9" style={{marginLeft:"15px"}}>
                             <input type="password" className="form-control" onChange={this.onChangePassword} name="password" value={this.state.password}/>
                         </div>
                     </div>
