@@ -12,7 +12,7 @@ export default class Home extends Component {
     }
 
     componentDidMount() {
-        // this.name = "veeral";
+        
     }
 
     render() {

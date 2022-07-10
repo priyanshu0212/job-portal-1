@@ -14,6 +14,10 @@ export default class NavBar extends Component {
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
                     
                     <div className="collapse navbar-collapse">
+                    <a class="navbar-brand" href="#">
+      <img src="logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top"></img>
+      Bootstrap
+    </a>
                         <ul className="navbar-nav mr-auto">
                             {/* <li className="navbar-item">
                                 <Link to="/users" className="nav-link">Users</Link>
