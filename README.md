@@ -61,4 +61,4 @@ You are invited to contribute to this project by adding a PR. If genuine, the ch
 * show profile picture.
 * download cv button on recruiter side,
 * edit job has some minor problems.
-* anything else you can find intresting, open for suggession.
+* anything else you can find interesting, open for suggestions.
